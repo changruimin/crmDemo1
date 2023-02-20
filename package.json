@@ -1,0 +1,53 @@
+{
+  "name": "crmDemo",
+  "version": "1.0.0",
+  "description": "简单灵活的表单验证插件，支持小程序、浏览器、Nodejs",
+  "main": "lib/we-validator.js",
+  "scripts": {
+    "dev": "NODE_ENV=development webpack --watch --config webpack.config --colors",
+    "build": "NODE_ENV=production webpack --config webpack.config --colors",
+    "test": "mocha test/*.js",
+    "prepublish": "npm run build"
+  },
+  "types": "./types/index.d.ts",
+  "files": [
+    "lib",
+    "dist",
+    "types"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ChanceYu/we-validator.git"
+  },
+  "keywords": [
+    "we-validator",
+    "validator",
+    "validation",
+    "weapp",
+    "wechat",
+    "mini-program",
+    "weapp-validator",
+    "node-validator"
+  ],
+  "author": "ChanceYu <i.fish@foxmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "babelify": "^7.3.0",
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "uglify-js": "^3.1.3",
+    "webpack": "^3.6.0"
+  },
+  "bugs": {
+    "url": "https://github.com/ChanceYu/we-validator/issues"
+  },
+  "homepage": "https://github.com/ChanceYu/we-validator#readme"
+}
