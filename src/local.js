@@ -2,8 +2,20 @@
  
 import CryptoJS from 'crypto-js';
 
-hzbankSTORY.getS("23")
-
+// hzbankSTORY.getS("23")
+export const setAction=(key) =>{
+    return new Promise( async (resolve, reject) => {
+        let sta = hasStorage(key)
+        if (sta) {
+            console.log("已存在此属性")
+        } 
+        else{
+                let res =  await xxxxx(key)
+                setStorage(key,res.xxxxx,0)
+        }
+    })
+      resolve();
+}
 
 // 十六位十六进制数作为密钥
 const SECRET_KEY = CryptoJS.enc.Utf8.parse("3333e6e143439161");
